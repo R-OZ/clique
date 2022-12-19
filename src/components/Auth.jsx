@@ -6,7 +6,7 @@ import Chatting from '../assets/Chatting';
 import signinImage from '../assets/signup.jpg'
 
 const cookies = new Cookies();
-
+export const linkedInUrl = "https://www.linkedin.com/in/reginald-ojeba/"
 const initialState = {
     fullName: '',
     username: '',
@@ -32,13 +32,13 @@ const Auth = () => {
             const { username, password, phoneNumber, avatarURL } = form;
 
             // const URL = 'http://localhost:5000/auth';
+            const URL = 'https://clique-backend.onrender.com/auth';
 
-            const URL = 'https://clique-chat-app.herokuapp.com/auth'
+            // const URL = 'https://clique-chat-app.herokuapp.com/auth'
 
             const { data: { token, userId, hashedPassword, fullName,} } = await axios.post(`${URL}/${isSignup ? 'signup' : 'login'}`, {
                 username, password, fullName: form.fullName, phoneNumber, avatarURL,
             });
-            
             cookies.set('token', token);
             cookies.set('username', username);
             cookies.set('fullName', fullName);
@@ -92,6 +92,10 @@ const Auth = () => {
         <div className="auth__form-container">
             <div className="auth__form-container_fields">
                 <div className="auth__form-container_fields-content">
+                    <a href={linkedInUrl} target="_blank"><div className="auth__form-logo">
+                        <p id="auth__logo">Clique</p>
+                        <p id="auth__logo-caption">By Reginald Ojeba</p>
+                    </div></a>
                     <p>{isSignup ? 'Sign Up' : 'Sign In'}</p> 
                     <form onSubmit={handleSubmit}>
                         {isSignup && (

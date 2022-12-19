@@ -3,9 +3,8 @@ import { ChannelList, useChatContext } from 'stream-chat-react'
 import Cookies from 'universal-cookie'
 
 import { ChannelSearch, TeamChannelList, TeamChannelPreview } from './'
-import chatIcon from "../assets/chatIcon.png"
-// import logoutIcon from "../assets1/logoutIcon.png"
-
+import chatlogo from "../assets/chat-logo.png"
+import { linkedInUrl } from './Auth'
 import Logout from "../assets/logout.png"
 
 const cookies = new Cookies();
@@ -14,7 +13,7 @@ const SideBar =({logout})=>(
     <div className='channel-list__sidebar'>
         <div className='channel-list__sidebar__icon1'>
             <div className='icon1__inner'>
-                <img src={chatIcon} alt ="Chat" width="30"/>
+                <img src={chatlogo} alt ="Chat"/>
             </div>
         </div>
         <div className='channel-list__sidebar__icon2'>
@@ -27,7 +26,7 @@ const SideBar =({logout})=>(
 
 const CompanyHeader = () =>(
     <div className='channel-list__header'>
-        <p className='channel-list__header__text'>Clique</p>
+        <a href={linkedInUrl} target="_blank"><p className='channel-list__header__text'>Clique</p></a>
     </div>
 )
 

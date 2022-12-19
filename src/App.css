@@ -9,6 +9,16 @@
     padding: 0;
     height: 100%;
   }
+  .lottie-img{
+    position: relative;
+  }
+  .lottie-img::after{
+    content: "";
+    position: absolute;
+    top:0;
+    width: 100%;
+    height: 100%;
+  }
   
   #root {
     height: 100%;
@@ -26,15 +36,43 @@
     flex-direction: column;
     justify-content: center;
   
-    padding: 2rem;
+    padding: 20px;
     background: #005fff;
+  }
+  .auth__form-logo{
+    /* background-color: red; */
+    width: 100%;
+    height: fit-content;
+    cursor: pointer;
+    --logo-color:#005fff;
+  }
+  .auth__form-logo:hover{
+    --logo-color: #0545b3;
+  }
+
+  #auth__logo{
+    color:var(--logo-color) ;
+    /* background-color: black; */
+    width: fit-content;
+    margin: auto;
+    font-family: 'Pacifico', cursive;
+    font-size: 50px ;
+  }
+  #auth__logo-caption{
+    width: fit-content;
+    margin: auto;
+    color:var(--logo-color) ;
+    /* background-color: yellow; */
+    font-family: 'Pacifico', cursive;
+    position: relative;
+    font-size: 14px;
+    left: 15%;
+    top:-10%
   }
   
   .auth__form-container_image {
     flex: 3;
     display: flex;
-    box-shadow: 1px 0px 5px rgba(0, 0, 0, 0.05);
-    /* padding-left: 10rem; */
     justify-content: center;
     align-items: center;
   }
@@ -49,7 +87,7 @@
     flex-direction: column;
     justify-content: flex-start;
   
-    padding: 2rem;
+    padding: 20px 30px;
     box-shadow: 0px 1px 5px rgb(0 0 0 / 10%);
     border-radius: 5px;
     transition: 0.8s ease;
@@ -59,8 +97,10 @@
   .auth__form-container_fields-content p {
     font-size: 1.5rem;
     font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Poppins', sans-serif;
     color: #05245a;
     font-weight: 900;
+    margin: 10px 0;
   }
   
   .auth__form-container_fields-content_input {
@@ -68,9 +108,11 @@
     flex-direction: column;
     position: relative;
   
-    margin: 1rem 0rem;
+    margin: 0.6rem 0rem;
   }
-  
+  a{
+    text-decoration: none;
+  }
   .auth__form-container_fields-content_input label {
     margin-bottom: 0.45rem;
     color: rgb(61, 79, 88);
@@ -168,9 +210,9 @@
     }
   
     .auth__form-container_image {
-      height: 100px;
-      flex: none;
-      box-shadow: none;
+      height: 100%;
+      width: 100%;
+      /* background-color: red; */
     }
   
     .auth__form-container_image img {
@@ -406,9 +448,15 @@
   .icon1__inner {
     font-family: Helvetica Neue, sans-serif;
     height: 100%;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+  .icon1__inner>img{
+    height: 80%;
+    width: 80%;
+    display: block;
   }
   
   .channel-list__sidebar__icon2 {
@@ -1843,13 +1891,14 @@
     align-items: center;
   }
   .clique-logo{
-    font-size: 15vw;
+    font-size: 18vw;
     color:#005fff ;
     font-family: 'Pacifico', cursive;
-    animation: mymove 2s infinite;  
+    animation: mymove 1.5s linear infinite;  
   }
   @keyframes mymove {
-    40% {font-size: 17vw;}
+    50% {font-size: 22vw;}
+    100% {font-size: 18vw;}
   }
 
   #auth__incorrect{

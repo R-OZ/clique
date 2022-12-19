@@ -13,7 +13,7 @@ const Chatting = () => {
       };
     
     return (
-      <div>
+      <div  className='lottie-img'>
         <Lottie 
           options={defaultOptions}
           height='100%'
