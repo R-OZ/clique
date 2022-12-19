@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/clique/static/css/main.75bf9541.css",
-    "main.js": "/clique/static/js/main.1d3df9dc.js",
+    "main.css": "/clique/static/css/main.43b6146e.css",
+    "main.js": "/clique/static/js/main.4d532e6a.js",
     "static/js/913.5f5fe264.chunk.js": "/clique/static/js/913.5f5fe264.chunk.js",
     "static/js/581.3b863194.chunk.js": "/clique/static/js/581.3b863194.chunk.js",
     "static/js/717.fd776f4e.chunk.js": "/clique/static/js/717.fd776f4e.chunk.js",
@@ -9,18 +9,18 @@
     "static/media/EmojiOneColor.woff2": "/clique/static/media/EmojiOneColor.90ee5fb894c8d349bc54.woff2",
     "static/media/NotoColorEmoji-flags.woff2": "/clique/static/media/NotoColorEmoji-flags.148141acfb7ce6e4f383.woff2",
     "static/media/signup.jpg": "/clique/static/media/signup.f535f5e21204d29d2009.jpg",
-    "static/media/chatIcon.png": "/clique/static/media/chatIcon.9322c9dc61993550e2ac.png",
+    "static/media/chat-logo.png": "/clique/static/media/chat-logo.3ebd9b64390a34ddfeb4.png",
     "static/media/str-chat__connection-error.svg": "/clique/static/media/str-chat__connection-error.90385cff548e3b068187c19d5f25e675.svg",
     "index.html": "/clique/index.html",
-    "main.75bf9541.css.map": "/clique/static/css/main.75bf9541.css.map",
-    "main.1d3df9dc.js.map": "/clique/static/js/main.1d3df9dc.js.map",
+    "main.43b6146e.css.map": "/clique/static/css/main.43b6146e.css.map",
+    "main.4d532e6a.js.map": "/clique/static/js/main.4d532e6a.js.map",
     "913.5f5fe264.chunk.js.map": "/clique/static/js/913.5f5fe264.chunk.js.map",
     "581.3b863194.chunk.js.map": "/clique/static/js/581.3b863194.chunk.js.map",
     "717.fd776f4e.chunk.js.map": "/clique/static/js/717.fd776f4e.chunk.js.map",
     "829.1277bac0.chunk.js.map": "/clique/static/js/829.1277bac0.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.75bf9541.css",
-    "static/js/main.1d3df9dc.js"
+    "static/css/main.43b6146e.css",
+    "static/js/main.4d532e6a.js"
   ]
 }
